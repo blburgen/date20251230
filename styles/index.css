@@ -6,7 +6,7 @@ body{
 }
 
 header, main, footer{
-    width: 720px;
+    max-width: 720px;
     border-left: 1px solid rgb(0, 0, 0);
     border-right: 1px solid rgb(0, 0, 0);
     border-radius: 1rem;
