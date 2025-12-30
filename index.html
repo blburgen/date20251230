@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./styles/index.css">
+    <script src="./scripts/index.js" defer></script>
 </head>
 <body>
     <header>
@@ -12,12 +13,27 @@
         <h2>Welcome to your cooking date challenge</h2>
     </header>
     <main>
-        <div class="opener">
-            <button type="button">Would you like to continue</button>
+        
+        <div id="part5" class="hidden">
+            <h2>Congradulations you have completed the challenge</h2>
         </div>
     </main>
     <footer>
-
+        <div id="open">
+            <button id="opening">Would you like to continue to part 1</button>
+        </div>
+        <div id="part1" class="hidden">
+            <button id="gotopart2" >Would you like to continue to part 2</button>
+        </div>
+        <div id="part2" class="hidden">
+            <button id="gotopart3">Would you like to continue to part 3</button>
+        </div>
+        <div id="part3" class="hidden">
+            <button id="gotopart4">Would you like to continue to part 4</button>
+        </div>
+        <div id="part4" class="hidden">
+            <button id="gotopart5">Would you like to continue to part 5</button>
+        </div>
     </footer>
 </body>
 </html>
