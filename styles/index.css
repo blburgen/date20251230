@@ -1,0 +1,17 @@
+body{
+    display: flex;
+    justify-content: center;
+    background-color: aqua;
+}
+
+body div{
+    flex-grow: 1;
+    max-width: 720px;
+    height: 1612px;
+    border: 1px solid black;
+    border-radius: 1rem;
+}
+
+h1{
+    text-align: center;
+}
