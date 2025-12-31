@@ -7,6 +7,8 @@ let part1c = document.getElementById("part1c");
 let flour = document.getElementById("flour");
 let cocoa = document.getElementById("cocoa");
 let sugar = document.getElementById("sugar");
+let soda = document.getElementById("soda");
+let powder = document.getElementById("powder");
 let gobacktopart1 = document.getElementById("gobacktopart1");
 let gotopart2 = document.getElementById("gotopart2");
 let gobacktopart2 = document.getElementById("gobacktopart2");
@@ -66,12 +68,15 @@ gobacktopart1.addEventListener("click",()=>{
     part2a.classList.add("hidden");
     part1.classList.remove("hidden");
     part1a.classList.remove("hidden");
+    wrong.classList.add("hidden");
 });
 
 gobacktopart2.addEventListener("click",()=>{
     part3.classList.add("hidden");
+    part3a.classList.add("hidden");
     part2.classList.remove("hidden");
     part2a.classList.remove("hidden");
+    wrong.classList.add("hidden");
 });
 
 gotopart3.addEventListener("click",()=>{
@@ -79,6 +84,7 @@ gotopart3.addEventListener("click",()=>{
     part2a.classList.add("hidden");
     part3.classList.remove("hidden");
     part3a.classList.remove("hidden");
+    wrong.classList.add("hidden");
 });
 
 part3c.addEventListener("click",()=>{
@@ -95,22 +101,41 @@ gotopart4.addEventListener("click",()=>{
     part3.classList.add("hidden");
     part3a.classList.add("hidden");
     part4.classList.remove("hidden");
+    part4a.classList.remove("hidden");
+    wrong.classList.add("hidden");
 });
 
 gobacktopart3.addEventListener("click",()=>{
     part4.classList.add("hidden");
+    part4a.classList.add("hidden");
     part3.classList.remove("hidden");
     part3a.classList.remove("hidden");
+    wrong.classList.add("hidden");
 });
+
+part4c.addEventListener("click",()=>{
+    if(part4b.value.toLowerCase() == "bake" || part4b.value.toLowerCase() == "baking"){
+        soda.classList.remove("hidden");
+        powder.classList.remove("hidden");
+        part4a.classList.add("answered")
+        wrong.classList.add("hidden");
+    }else{
+        wrong.classList.remove("hidden");
+    }
+})
 
 gotopart5.addEventListener("click",()=>{
     part4.classList.add("hidden");
+    part4a.classList.add("hidden");
     part5.classList.remove("hidden");
     part5a.classList.remove("hidden");
+    wrong.classList.add("hidden");
 });
 
 gobacktopart4.addEventListener("click",()=>{
     part5.classList.add("hidden");
     part5a.classList.add("hidden");
     part4.classList.remove("hidden");
+    part4a.classList.remove("hidden");
+    wrong.classList.add("hidden");
 });
