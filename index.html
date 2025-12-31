@@ -13,26 +13,57 @@
         <h2>Welcome to your cooking date challenge</h2>
     </header>
     <main>
-        
+        <div class="hidden" id="recipe">
+            <h3>Ingredients</h3>
+            <ul>
+                <li>1.75 cups <span id="flour" class="hidden">flour</span></li>
+                <li>3/4 cup <span id="cocoa" class="hidden">unsweetened cocoa powder</span></li>
+                <li>1.75 cups granulated sugar</li>
+                <li>2 teaspoons baking soda</li>
+                <li>1 teaspoon baking powder</li>
+                <li>1 teaspoon salt</li>
+                <li>0.5 cup canola oil</li>
+                <li>2 large eggs</li>
+                <li>2 teaspoons pure vanilla extract</li>
+                <li>1.5 cup milk</li>
+            </ul>
+            <div id="dish">9 inch glass pan</div>
+            <div id="instruction">
+
+                <p>Preheat oven to 350 deg F</p>
+                <p>Mix dry ingredients in one bowl and the wet ingredients in a separate bowl.</p>
+                <P>Wisk the dry and wet ingredients together and poar into greesed pan.</P>
+                <p>Bake for 23-26 minutes or until done.</p>
+            </div>
+        </div>
+        <div id="part1a" class="hidden">
+            <p>What is a fine, powdery, starchy foodstuff produced by milling or grinding raw cereal grains (like wheat, corn, or rye), seeds, roots, or legumes.</p>
+            <input type="text" id="part1b">
+            <button type="submit" id="part1c">Submit your answer!</button>
+        </div>
+        <div id="wrong" class="hidden">Sorry your answer is incorrect. Please try again.</div>
         <div id="part5" class="hidden">
             <h2>Congradulations you have completed the challenge</h2>
         </div>
     </main>
     <footer>
         <div id="open">
-            <button id="opening">Would you like to continue to part 1</button>
+            <button id="opening">Continue to part 1</button>
         </div>
         <div id="part1" class="hidden">
-            <button id="gotopart2" >Would you like to continue to part 2</button>
+            <button id="gotopart2">Continue to part 2</button>
         </div>
         <div id="part2" class="hidden">
-            <button id="gotopart3">Would you like to continue to part 3</button>
+            <button id="gotopart3">Continue to part 3</button>
+            <button id="gobacktopart1">Go back</button>
         </div>
         <div id="part3" class="hidden">
-            <button id="gotopart4">Would you like to continue to part 4</button>
+            <button id="gotopart4">Continue to part 4</button>
+            <button id="gobacktopart2">Go back</button>
         </div>
         <div id="part4" class="hidden">
-            <button id="gotopart5">Would you like to continue to part 5</button>
+            <button id="gotopart5">Continue to part 5</button>
+            <button id="gobacktopart3">Go back</button>
         </div>
     </footer>
 </body>

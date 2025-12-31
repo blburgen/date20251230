@@ -2,7 +2,8 @@ body{
     display: grid;
     justify-content: center;
     background-color: rgb(230, 193, 231);
-    height: 1612px;
+    max-height: 1612px;
+    font-size: 20px;
 }
 
 header, main, footer{
@@ -12,22 +13,26 @@ header, main, footer{
     border-radius: 1rem;
     margin-top: 0;
     margin-bottom: 0;
+    padding: 15px;
 }
 
-header, footer{
-    height: 300px;
+header{
+    height: 250px;
+}
+
+footer{
+    height: 150px;
 }
 
 main{
     height: 1000px;
-    display: flex;
     justify-content: center;
-    align-items: center;
 }
 
 h1{
     text-align: center;
     font-size: 65px;
+    margin: 15px;
 }
 
 h2{
@@ -37,12 +42,35 @@ h2{
 }
 
 button{
+    display: block;
     font-size: 45px;
     padding: 10px;
-    margin: 10px;
+    margin: auto;
+    border-radius: 1rem;
+}
+
+input{
+    display: block;
+    margin: 10px auto;
+    font-size: 35px;
+    padding: 10px;
     border-radius: 1rem;
 }
 
 .hidden {
     display: none;
+}
+
+.answered {
+    display: none;
+}
+
+span{
+    color:rgb(0, 38, 255)
+}
+
+#wrong{
+    margin: 15px;
+    color: rgb(255, 0, 0);
+    background-color: rgb(255, 255, 255);
 }
