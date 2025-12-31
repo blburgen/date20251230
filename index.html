@@ -18,7 +18,7 @@
             <ul>
                 <li>1.75 cups <span id="flour" class="hidden">flour</span></li>
                 <li>3/4 cup <span id="cocoa" class="hidden">unsweetened cocoa powder</span></li>
-                <li>1.75 cups granulated sugar</li>
+                <li>1.75 cups <span id="sugar" class="hidden">granulated sugar</span></li>
                 <li>2 teaspoons baking soda</li>
                 <li>1 teaspoon baking powder</li>
                 <li>1 teaspoon salt</li>
@@ -41,8 +41,18 @@
             <input type="text" id="part1b">
             <button type="submit" id="part1c">Submit your answer!</button>
         </div>
+        <div id="part2a" class="hidden">
+            <p>Comes from the roasted, ground seeds (beans) of the Theobroma cacao tree, processed into powder or liquor, offering a rich, slightly bitter, complex flavor profile influenced by origin and processing, ranging from nutty to fruity.</p>
+            <input type="text" id="part2b">
+            <button type="submit" id="part2c">Submit your answer!</button>
+        </div>
+        <div id="part3a" class="hidden">
+            <p>A sweet crystalline substance obtained from various plants, especially cane and beet, consisting essentially of sucrose, and used as a sweetener in food and drink.</p>
+            <input type="text" id="part3b">
+            <button type="submit" id="part3c">Submit your answer!</button>
+        </div>
         <div id="wrong" class="hidden">Sorry your answer is incorrect. Please try again.</div>
-        <div id="part5" class="hidden">
+        <div id="part5a" class="hidden">
             <h2>Congradulations you have completed the challenge</h2>
         </div>
     </main>
@@ -64,6 +74,9 @@
         <div id="part4" class="hidden">
             <button id="gotopart5">Continue to part 5</button>
             <button id="gobacktopart3">Go back</button>
+        </div>
+        <div id="part5" class="hidden">
+            <button id="gobacktopart4">Go back</button>
         </div>
     </footer>
 </body>
