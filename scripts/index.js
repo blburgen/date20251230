@@ -125,10 +125,17 @@ part4c.addEventListener("click",()=>{
 })
 
 gotopart5.addEventListener("click",()=>{
+    if(
+        part1a.classList.contains("answered") && 
+        part2a.classList.contains("answered") && 
+        part3a.classList.contains("answered") && 
+        part4a.classList.contains("answered")
+    ){
+        part5a.classList.remove("hidden");
+    }
     part4.classList.add("hidden");
     part4a.classList.add("hidden");
     part5.classList.remove("hidden");
-    part5a.classList.remove("hidden");
     wrong.classList.add("hidden");
 });
 
